@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三种方法面向对象
+    </title>
+</head>
+<body>
+    <script>
+        var person = {
+          name: "叶导",
+          age: 18,
+          city: "FuJian"
+        };
+
+        function Person(name, age, city) {
+    this.name = name;
+    this.age = age;
+    this.city = city;
+  }
+
+  var person = new Person("叶导", 18, "FuJian");
+
+  var personPrototype = {
+    name: "叶导",
+    age: 18,
+    city: "FuJian"
+  };
+
+  var person = Object.create(personPrototype);
+  console.log(person.name);
+  console.log(person.age)
+  console.log(person.city);
+      </script>
+</body>
+</html>

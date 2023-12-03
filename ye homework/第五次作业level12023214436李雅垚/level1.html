@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>递归/循环方法写n的阶乘</title>
+</head>
+<body>
+    <script>
+        function factorialRecursive(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorialRecursive(n - 1);
+  }
+}
+console.log(factorialRecursive(5)); 
+
+function factorialLoop(n) {
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorialLoop(5));
+    </script>
+</body>
+</html>

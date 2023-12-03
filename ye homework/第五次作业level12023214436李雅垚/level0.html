@@ -1,0 +1,29 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冰月姐姐布置的作业</title>
+</head>
+<body>
+<script>
+       const person={
+            name:'叶导',
+            age:18,
+            address:{
+                city:'China',
+                college:'cqupt',
+            },
+            title:['student',{year:2023,student:'goodstudent'}]
+        }
+        const{name,age,address:{city,college},title:[title,{year,student}]}=person;
+        console.log(name);
+        console.log(age);
+        console.log(city);
+        console.log(college);
+        console.log(title);
+        console.log(year);
+        console.log(student);
+</script>
+</body>
+</html>
