@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    min-width: 992px;
+    height: 100%;
+    color: #333;
+    font-size: 14px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container-head {
+    display: flex;
+}
+
+.main-left {
+    width: 220px;
+    background-color: #f0f0f0;
+}
+
+.main-right {
+    /* 占满整个剩余空间 */
+    flex: 1;
+    padding: 10px 30px;
+    background: #b3edfc1a;
+}
+
+/* 左侧 */
+.main-item {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    background-color: #f0f0f0;
+}
+
+.music-title {
+    font-size: 20px;
+    height: 30px;
+
+}
+
+.icon-wangyiyun {
+    color: red;
+    font-size: 20px;
+}
+
+.main-left-0 li {
+    line-height: 40px;
+
+}
+
+.main-left-0 li a {
+    /* 转换成快捷元素 */
+    display: block;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.main-left-0 li i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.main-left-0 li a:hover {
+    background-color: #f70808b4;
+}
+
+/* 右侧 */
+/* 用户登录 */
+.login {
+    font-size: 15px;
+    text-decoration: underline;
+    float: right;
+}
+
+/* 搜索框 */
+.main-right-search {
+    text-align: right;
+    position: relative;
+    margin-right: 50px;
+}
+
+.main-right-search input {
+    padding: 5px 10px;
+    width: 220px;
+    outline: none;
+}
+
+.main-right-search i {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-weight: 700;
+    color: #777;
+}
+
+/* 轮播 */
+.main-right-slide ul {
+    display: flex;
+}
+
+.main-right-slide ul img {
+    border-radius: 10px;
+    max-width: 90%;
+    height: auto;
+}
+
+.main-right-switch {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main-right-switch a {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.356);
+    margin: 0 7px;
+}
+
+/* 推荐歌单 */
+.main-right-hot h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main-right-hot ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-right-hot ul img {
+    width: 200px;
+}
+
+.main-right-hot ul li {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.hot-play {
+    background: url(../image/cover_play.png) no-repeat;
+    position: absolute;
+    top: 17px;
+    left: 9px;
+    width: 100%;
+    height: 135px;
+    transform: scale(0.6);
+    display: none;
+}
+
+.main-right-hot ul li:hover .hot-play {
+    display: block;
+    transoform: scale(.3);
+}
+
+.main-right-hot li img:hover {
+    transform: scale(1.1);
+}
+
+.main-right-hot li p {
+    margin: 10px 0;
+}
+
+/* 底部 */
+footer {
+    min-width: 992px;
+    height: 80px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    left: 0;
+}
+
+.footer-list {
+    min-width: 992px;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #fff;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+}
+
+.player-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.song-artist {
+    font-size: 14px;
+    margin: 0;
+    color: #000000;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+}
+
+.player-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.icon-diyiyeshouyeshangyishou {
+    font-size: 40px !important;
+}
+
+.icon-zanting1 {
+    font-size: 40px !important;
+    color: red;
+    ;
+}
+
+.icon-zuihouyiyemoyexiayishou {
+    font-size: 40px !important;
+}
